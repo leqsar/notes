@@ -1,5 +1,5 @@
 import TagsList from './TagsList.js'
-import {useState, useEffect} from 'react'
+import {useState} from 'react'
 
 function Note() {
   const [noteData, setNoteData] = useState('');
@@ -9,7 +9,6 @@ function Note() {
   }
 
   function handleSaveClick() {
-    console.log(noteData);
     const requestOptions = {
       method: 'POST',
       headers: {
